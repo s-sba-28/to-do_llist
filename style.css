@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	box-sizing: border-box;
+	background: linear-gradient(135deg, #0f766e, #2dd4bf 55%, #99f6e4);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	font-family: 'Roboto', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+.container {
+	text-align: center;
+	background-color: #f0fdfa;
+	padding: 32px;
+	border: 1px solid rgba(255, 255, 255, 0.65);
+	border-radius: 18px;
+	width: min(100%, 440px);
+	box-shadow: 0 20px 50px rgba(15, 118, 110, 0.25);
+}
+
+.input-area {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	gap: 10px;
+}
+
+input[type="text"] {
+	flex: 1;
+	min-width: 0;
+	padding: 12px 14px;
+	border: 1px solid #99f6e4;
+	border-radius: 9px;
+	background-color: #fff;
+	color: #134e4a;
+	font: inherit;
+}
+
+input[type="text"]:focus {
+	outline: 3px solid rgba(45, 212, 191, 0.25);
+	border-color: #0f766e;
+}
+
+.add {
+	padding: 10px 20px;
+	background-color: #0f766e;
+	color: #fff;
+	border: none;
+	border-radius: 9px;
+	cursor: pointer;
+	font: inherit;
+	font-weight: 700;
+	transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.add:hover {
+	background-color: #115e59;
+	transform: translateY(-1px);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	background-color: #ccfbf1;
+	color: #134e4a;
+	display: flex;
+	gap: 12px;
+	padding: 12px 14px;
+	border-radius: 9px;
+	margin-bottom: 10px;
+	justify-content: space-between;
+	align-items: center;
+	text-align: left;
+}
+
+li span {
+	flex: 1;
+}
+
+.delete {
+	padding: 8px 11px;
+	background-color: #0d9488;
+	color: #fff;
+	border: none;
+	border-radius: 7px;
+	cursor: pointer;
+	margin-left: 1em;
+	font: inherit;
+	transition: background-color 0.2s ease;
+}
+
+.delete:hover {
+	background-color: #0f766e;
+}
+
+@media (max-width: 600px) {
+	body {
+		padding: 20px;
+	}
+
+	.container {
+		padding: 24px;
+	}
+}
+
+@media (max-width: 380px) {
+	.input-area {
+		flex-direction: column;
+	}
+}
